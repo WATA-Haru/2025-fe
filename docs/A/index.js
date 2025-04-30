@@ -1,4 +1,3 @@
-// after
 const apiURL = "https://jsonplaceholder.typicode.com/users/1"
 
 const getNameFromAPI = async () => {
@@ -17,6 +16,6 @@ const getNameFromAPI = async () => {
 
 (async () => {
   const name = await getNameFromAPI();
-  const el = document.querySelector("user-name");
-  el.textContent = name;
+  const usernameField = document.querySelector("user-name");
+  usernameField.textContent = name;
 })();

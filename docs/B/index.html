@@ -2,17 +2,31 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>問題B</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>問題B</title>
+  <link rel="stylesheet" href="../base.css" />
 </head>
 <body>
-  <h1>Q. 税込み計算をするとNan円になります。jsを修正して正しい値が表示できるようにしてください</h1>
-  <label for="price">Price</label>
-  <input name="price" type="text" id="price" value="1000円">
+  <div class="container">
+    <div class="question">
+      <p>Q1. ボタンを押しても何起きず、エラーが出ます。jsを修正してみてください</p>
+      <aside class="error">
+        Error: index.js:2 Uncaught TypeError: Cannot read properties of null (reading 'value')  
+        at HTMLButtonElement.&lt;anonymous&gt; (index.js:2:47)
+      </aside>
+    </div>
+    <div class="question">
+      <p>Q2. 仮に表示できたとして、税込み計算をするとNan円になります。jsを修正して正しい値が表示できるようにしてください</p>
+    </div>
 
-  <button id="calc">税込み計算</button>
-  <div id="result"></div>
+    <label for="price" class="price-label">Price</label>
+    <input name="price" type="text" class="price-input" value="1000円" />
+    <button class="calc-button">税込み計算</button>
+    <div class="result" class="result"></div>
+
+    <a href="../index.html">Homeへ戻る</a>
+  </div>
   <script defer src="./index.js"></script>
 </body>
 </html>

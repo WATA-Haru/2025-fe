@@ -1,17 +1,23 @@
 <!-- indexC.html -->
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>問題C</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>問題C</title>
+  <link rel="stylesheet" href="../base.css" />
 </head>
 <body>
-  <h1>Q. ボタンを押すとAPIにリクエストがされて画面に値が表示されるはずですがされません。(hint: 非同期処理, async, await)</h1>
-  <button id="load">読み込み</button>
-  <div id="data"></div>
+  <div class="container">
+    <div class="question">
+      <p>Q. ボタンを押すとAPIにリクエストがされて画面に値が表示されるはずですが、どうやら正しく表示されないようです。(hint: 非同期処理, async, await)</p>
+    </div>
 
+    <button class="load-button">読み込み</button>
+    <div class="data" class="data"></div>
+
+    <a href="../index.html">Homeへ戻る</a>
+  </div>
   <script defer src="./index.js"></script>
 </body>
 </html>
