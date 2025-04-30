@@ -6,5 +6,5 @@ document.getElementById("load").addEventListener("click", () => {
       result = data.title;
     });
 
-  document.getElementById("data").textContent = result; // ← ここが先に実行される
+  document.getElementById("data").textContent = result;
 });

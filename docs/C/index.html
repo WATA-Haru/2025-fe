@@ -1,12 +1,17 @@
 <!-- indexC.html -->
 <!DOCTYPE html>
-<html>
-<head><title>問題C</title></head>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>問題C</title>
+</head>
 <body>
-  <h1>遅延読み込み</h1>
+  <h1>Q. ボタンを押すとAPIにリクエストがされて画面に値が表示されるはずですがされません。(hint: 非同期処理, async, await)</h1>
   <button id="load">読み込み</button>
   <div id="data"></div>
 
-  <script src="./index.js"></script>
+  <script defer src="./index.js"></script>
 </body>
 </html>
