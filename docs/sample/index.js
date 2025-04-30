@@ -1,8 +1,9 @@
-const items = ["りんご", "バナナ", "ぶどう"];
-document.getElementById("list").innerHTML = "";
+const button = document.querySelector(".color-change-button")
+const elements = document.querySelectorAll("bg-yellow")
 
-items.filter(item => {
-  const li = document.createElement("li");
-  li.textContent = item;
-  document.getElementById("list").appendChild(li);
-});
+button.addEventListener("click", () => {
+  elements.forEach((element) => {
+    element.classList.remove("bg-yellow")
+    element.classList.add("red")
+  })
+})

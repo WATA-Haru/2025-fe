@@ -1,0 +1,44 @@
+.wrapper {
+  margin-inline: auto;
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.bg-yellow {
+  background-color: yellow;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & .circle__content {
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
+
+.square {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & .square__content {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
