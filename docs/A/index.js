@@ -14,8 +14,9 @@ const getNameFromAPI = async () => {
   return data.name
 }
 
+// break pointは下記asyncの行に張る必要がある
 (async () => {
   const name = await getNameFromAPI();
-  const usernameField = document.querySelector("user-name");
+  const usernameField = document.querySelector(".user-name");
   usernameField.textContent = name;
 })();
